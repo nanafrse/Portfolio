@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/images.png" alt="avatar da Nana" class="rounded-circle" width="150" height="150"
+            srcset="">
+        <p class="lead">Eu sou Nana_</p>
+        <h1>Eu estudo Programação</h1>
+        <p>Sou Estudante do 2 ano do ensino médio e estou cursando o itinerário de exatas. Veja os projetos
+            que já desenvolvi!</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">P5js</p>
+            <p class="badge bg-secondary">Scratch</p>
+            <p class="badge bg-secondary">VScode</p>
+            <p class="badge bg-secondary">MicroBit</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-1.png" class="card-img-top" alt="Imagem do projeto de Recomendadorde filmes">
+                    <div class="card-body">
+                        <h5 class="card-title">Nanaflix: Um Recomendador de filmes</h5>
+                        <p class="card-text">Este projeto é uma página web que recomenda alguns dos meus filmes favoritos, de acordo com a sua idade, e gosto. A página é feita com p5.js para uma visualização simples e usa fontes
+                            externas do Google Fonts.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-2.png" class="card-img-top" alt="Imagem do projeto de Quente e Frio">
+                    <div class="card-body">
+                        <h5 class="card-title">Quente e Frio: Um jogo de esconde esconde!</h5>
+                        <p class="card-text">Este projeto é um jogo interativo baseado em achar o ponto escondido atraves do movimento de seu mouse.
+                            Conforme a esfera diminui, mais perto do alvo vc esta!
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-3.png" class="card-img-top" alt="Imagem do projeto de Corrida">
+                    <div class="card-body">
+                        <h5 class="card-title">Run!: Uma corrida Interativa entre um grupo de 4 pessoas
+                        </h5>
+                        <p class="card-text">Este projeto p5js cria uma experiência interativa entre um grupo por uma corrida que acontece quando se clicam nas teclas a s d ou f.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nanaflix: Um Recomendador de filmes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Este projeto desenvolvido com a biblioteca p5.js tem como objetivo criar um sistema interativo de recomendação de filmes com base na idade do usuário e nos seus gêneros de preferência. A interface gráfica é simples e amigável, composta por uma caixa de texto onde o usuário insere sua idade e várias caixas de seleção (checkboxes) representando diferentes gêneros de filmes, como Ação, Comédia, Drama, Animação, Terror, Romance, entre outros.</p>
+                    <p>Ao preencher a idade e selecionar os gêneros que mais gosta, o usuário pode clicar em um botão que ativa o sistema de recomendação.</p>
+                    <p>O programa, então, analisa as informações fornecidas: primeiro, verifica se a idade inserida é compatível com certos gêneros (por exemplo, não recomendar filmes de terror para crianças), e depois cruza os gêneros selecionados com uma base de dados simples contendo filmes previamente cadastrados por categoria e faixa etária. Com essas informações, o sistema exibe uma lista de filmes recomendados na tela.</p>
+                    <p>Este projeto é ideal para iniciantes em programação criativa com p5.js, pois utiliza conceitos básicos de entrada de dados, estruturas condicionais, arrays e elementos interativos da biblioteca. Além de ser funcional, o projeto também permite diversas possibilidades de expansão, como adicionar imagens dos filmes, trailers, classificações ou até recomendações com base em múltiplos critérios, oferecendo uma boa base para projetos mais complexos no futuro.</p>
+                    <img src="img/projeto-1.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de um Recomendador">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/00001102407902sp/full/eDaEE-Gpm">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quente e frio; um jogo de esconde-esconde!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>"Quente e Frio", é um jogo interativo desenvolvido com a biblioteca p5.js que pode ser analisado como um produto digital voltado para o entretenimento e o aprendizado de lógica básica de programação. A mecânica do jogo é baseada em um desafio de localização: o sistema escolhe aleatoriamente uma posição secreta dentro da área visível da tela, e o usuário deve mover o cursor do mouse tentando descobrir onde está esse ponto oculto.
+                    </p>
+                    <p>A cada movimento do mouse, o sistema calcula a distância entre o cursor e o ponto alvo, e responde visualmente por meio de mudanças de cor no fundo da tela. Quando o usuário está longe do ponto, são exibidas cores "frias", como azul e roxo; à medida que se aproxima, as cores vão esquentando, passando por tons como amarelo, laranja e vermelho, indicando que está chegando perto. O projeto se destaca por sua simplicidade, mas também pela eficácia com que traduz lógica em feedback visual, tornando a interação intuitiva e envolvente.</p></p>
+                    <p>Como produto, é ideal para fins educacionais ou como demonstração de como conceitos como variáveis, distâncias e condicionais podem ser aplicados de forma criativa.</p>
+                    <p>Além disso, o projeto possui grande potencial de expansão: é possível adicionar elementos como sons, cronômetro, níveis de dificuldade ou desafios extras, transformando-o em um jogo mais robusto. "Quente e Frio" é um exemplo de como uma ideia simples pode ser transformada em uma experiência digital rica, interativa e divertida.
+                    </p>
+                    <img src="img/projeto-2.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto Quente e frio">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/00001102407902sp/full/vq8bGNxnd">Ver projeto ao
+                        vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Run: um jogo de corrida entre amigos!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Este projeto de corrida, desenvolvido com a biblioteca p5.js, é a continuação de uma versão inicial e traz aprimoramentos que o tornam mais completo e interessante como produto interativo. Na parte 2 do projeto, a dinâmica básica do jogo — onde um carro controlado pelo jogador percorre uma pista enquanto desvia de obstáculos e interage com outros elementos — é expandida com recursos adicionais que aumentam o desafio e a imersão.</p>
+                    <p>Entre as melhorias, destaca-se a adição de um sistema de pontuação, que contabiliza os pontos a cada vez que o jogador ultrapassa os carros adversários, incentivando o desempenho e criando um objetivo claro. Também são introduzidos elementos como colisão entre veículos, que interfere no jogo ao reduzir a pontuação ou reiniciar a posição do carro, o que adiciona uma camada de dificuldade e estratégia. Outro ponto relevante é o uso de sons e trilha sonora, que contribuem para a ambientação e tornam a experiência mais dinâmica.</p>
+                    <p>A movimentação contínua da pista e dos carros adversários reforça a sensação de velocidade, enquanto o controle do carro principal por meio das teclas direcionais mantém a jogabilidade acessível. Como produto digital, esta versão do projeto de corrida se posiciona como um jogo casual, ideal para ser executado em navegadores, com potencial para expandir ainda mais com novos modos de jogo, fases, power-ups ou rankings. No aspecto técnico, ele explora conceitos importantes como movimentação em dois eixos, detecção de colisão, controle de entrada do usuário, sons e gerenciamento de estados do jogo. É um exemplo eficiente de como a programação criativa pode ser usada para construir experiências completas, combinando lógica, arte e interatividade.</p>
+                    <img src="img/projeto-3.png" alt="Projeto 3" class="img-fluid w-100">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/00001102407902sp/full/ajsJkTDgC">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/nanafrse">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2024. Produzido por Anna Soares/p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
